@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Website</title>
+</head>
+
+<body>
+    <h1>Welcome to my first website</h1>
+    <p>This is a basic website with a few pages.</p>
+    <p>Click on the links below to view the other pages:</p>
+    <ul>
+        <li><a href="page1.html">Page 1</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+    </ul>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBexv53QjQkiePGCqUGmccjsTnHiL7Nyso",
+            authDomain: "mywebsite-55843.firebaseapp.com",
+            projectId: "mywebsite-55843",
+            storageBucket: "mywebsite-55843.appspot.com",
+            messagingSenderId: "202787910730",
+            appId: "1:202787910730:web:dcebf877fe31f7465462b3",
+            measurementId: "G-NL2KTP4X5V"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
